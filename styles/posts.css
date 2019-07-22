@@ -1,36 +1,22 @@
-
 body {
     background-color: #ffe14a;
 }
 
-
-
-
-
-a {
-    text-decoration: none;
-    
-}
-
-#todoContainer {
+#post-list {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.todo {
+.post {
+    flex-basis: 25%;
     border: 2px dashed #848494;
     border-radius: 50px;
-    font-family: 'Caveat', cursive;
-    flex-basis: 20%;
-    padding: 10px;
-    margin: 1em 0;
-    
+    padding: 20px;
+    margin: 20px;
 }
 
-
-
-.todo:hover {
+.post:hover {
     background-color: #fff8f7;
     color: darkred;
     border: 2px solid darkblue;
@@ -52,11 +38,14 @@ a {
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
 
-  .todo__title {
-    font-size: 2em;
+.post__title {
+    font-family: 'Permanent Marker', cursive; 
+    font-size: 2.5em;
+    text-align: center;
 }
 
-.todo_completed {
-    font-size: 1.25em;
-
+.post__body {
+    font-family: 'Caveat', cursive;  
+    font-size: 1.5em;
+    text-align: center;
 }
